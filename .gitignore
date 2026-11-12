@@ -1,0 +1,37 @@
+# Maven / Java compilados
+/target/
+.mvn/
+!.mvn/wrapper/maven-wrapper.properties
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# IDEs
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.vscode/
+.factorypath
+*.swp
+
+# Node (Husky)
+node_modules/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración local y secretos
+.env
+application-local.properties
+application-local.yml
+*.pem
+*.key
+
+# Logs
+*.log
+logs/

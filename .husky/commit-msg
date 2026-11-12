@@ -1,0 +1,10 @@
+# Valida que el primer renglon cumpla Conventional Commits.
+pattern='^(feat|fix|test|docs|refactor|chore|ci|build|style|perf|revert)(\([a-z0-9._-]+\))?!?: .{1,72}$'
+first_line=$(head -n 1 "$1")
+
+if ! echo "$first_line" | grep -Eq "$pattern"; then
+  echo "[commit-msg] Mensaje invalido: $first_line"
+  echo "Formato esperado: tipo(alcance opcional): descripcion"
+  echo "Ejemplo: feat(auth): agregar registro de investigadores"
+  exit 1
+fi

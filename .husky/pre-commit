@@ -1,0 +1,7 @@
+echo "[pre-commit] Ejecutando pruebas (mvn test)..."
+mvn -q test || exit 1
+
+echo "[pre-commit] Ejecutando Checkstyle (mvn checkstyle:check)..."
+mvn -q checkstyle:check || exit 1
+
+echo "[pre-commit] OK"

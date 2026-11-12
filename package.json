@@ -1,0 +1,12 @@
+{
+  "name": "asesor-cvlac",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Herramientas de desarrollo (Husky) de Asesor CvLAC",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "husky": "^9.1.6"
+  }
+}
